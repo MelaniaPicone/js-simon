@@ -23,20 +23,16 @@ for (let i = 0; i < randomNum.length; i++) {
 }
 
 const timer = setInterval(() =>
-{ time --;
+{  countdown.textContent = `Tempo: ${time} secondi`;
+  time --;
 
   if (time === 20){
 numList.innerHTML = "";
-form.classList.remove("d-done");
-
-  }
+form.classList.remove("d-none");
+}
 
   if (time < 0) {
 clearInterval(timer);
   }
 
-
-
-
-
-})
+}, 1000)
