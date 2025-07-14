@@ -22,4 +22,21 @@ for (let i = 0; i < randomNum.length; i++) {
   numList.appendChild(li);
 }
 
+const timer = setInterval(() =>
+{ time --;
 
+  if (time === 20){
+numList.innerHTML = "";
+form.classList.remove("d-done");
+
+  }
+
+  if (time < 0) {
+clearInterval(timer);
+  }
+
+
+
+
+
+})
